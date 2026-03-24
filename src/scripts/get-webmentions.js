@@ -8,6 +8,11 @@ dotenv.config();
 const CACHE_DIR = "src/content/data";
 const TOKEN = process.env.WEBMENTION_API_KEY;
 
+if (!TOKEN) {
+  console.warn("⚠️  No WEBMENTION_API_KEY found — skipping webmention fetch.");
+  process.exit(0);
+}
+
 async function fetchWebmentions(since, perPage = 100) {
   let allMentions = { children: [] };
   let page = 0;
