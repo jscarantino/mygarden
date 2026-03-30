@@ -68,7 +68,7 @@
 
 :root {
   /* Color scheme for browser UI */
-  color-scheme: only light;
+  color-scheme: light dark;
 
   /* Spacing */
   --space-4: 0.25rem;
