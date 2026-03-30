@@ -37,7 +37,7 @@ export async function GET(context) {
   const smidgeons = await getCollection("smidgeons", ({ data }) => !data.draft);
 
   return rss({
-    title: "Maggie Appleton's Smidgeons",
+    title: "Josef Scarantino's Smidgeons",
     description: "A stream of interesting links, papers, and tiny thoughts",
     site: context.site,
     items: smidgeons

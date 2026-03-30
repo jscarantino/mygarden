@@ -93,8 +93,8 @@ export async function GET(context) {
   const now = await getCollection("now", ({ data }) => !data.draft);
 
   return rss({
-    title: "Maggie Appleton",
-    description: "Essays on programming, design, and anthropology",
+    title: "Josef Scarantino",
+    description: "Essays on various topics",
     site: context.site,
     items: [
       ...notes.map((post) => ({

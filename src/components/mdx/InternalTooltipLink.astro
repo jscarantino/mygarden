@@ -97,7 +97,7 @@ const { href, title, description } = Astro.props;
 		.styled-link:hover::before {
 			display: inline-block;
 			transform: translate3d(0, 3px, 0) scale3d(1, 2, 1);
-			background: var(--color-bright-crimson);
+			background: var(--color-neon-red);
 			clip-path: polygon(
 				0% 0%,
 				0% 100%,
@@ -118,7 +118,7 @@ const { href, title, description } = Astro.props;
 		white-space: normal;
 		transition: all 0.5s cubic-bezier(0.2, 1, 0.8, 1);
 		word-break: break-all;
-		color: var(--color-medium-sea-blue);
+		color: var(--color-neon-red);
 		text-decoration: underline;
 	}
 
@@ -130,6 +130,6 @@ const { href, title, description } = Astro.props;
 
 	.styled-link:hover span {
 		transform: translate3d(0, -1px, 0);
-		color: var(--color-dark-sea-blue);
+		color: var(--color-neon-red);
 	}
 </style>

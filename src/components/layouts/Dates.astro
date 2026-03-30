@@ -22,15 +22,15 @@ const isRecentUpdate = hasStartDate ? dateDifference <= 3 : true;
 	{
 		!hasStartDate || isRecentUpdate ? (
 			<span>
-				Planted <RelativeDate postDate={updated} />
+				Posted <RelativeDate postDate={updated} />
 			</span>
 		) : (
 			<Fragment>
 				<span>
-					Planted <RelativeDate postDate={startDate} />
+					Posted <RelativeDate postDate={startDate} />
 				</span>
 				<span>
-					Last tended <RelativeDate postDate={updated} />
+					Last edited <RelativeDate postDate={updated} />
 				</span>
 			</Fragment>
 		)

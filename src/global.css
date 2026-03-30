@@ -68,7 +68,7 @@
 
 :root {
   /* Color scheme for browser UI */
-  color-scheme: light dark;
+  color-scheme: only light;
 
   /* Spacing */
   --space-4: 0.25rem;
@@ -106,6 +106,9 @@
   --color-salmon: #fd8370;
   --color-gold: #ffd09c;
   --color-dark-salmon: #e1624f;
+  --color-fk-green: #52b64d;
+  --color-fk-green-dark: #50804e;
+  --color-neon-red: #FF3131;
 
   /* Opacity variants for colors */
   /* Crimson variants */
